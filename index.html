@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VILLA360 | Villa de Allende</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="barra">
+  <a class="marca" href="#inicio">✿ VILLA360</a>
+  <form class="busqueda" action="#inicio">
+    <label for="buscar">Buscar</label>
+    <input id="buscar" type="text" placeholder="Buscar en el sitio...">
+    <button type="submit">Buscar</button>
+  </form>
+  <button class="menu-btn" onclick="document.body.classList.toggle('menu-abierto')" aria-label="Abrir menú">☰ MENÚ</button>
+  <nav class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#gastronomia">Gastronomía</a>
+    <a href="#costumbres">Costumbres</a>
+    <a href="#artesanias">Artesanías</a>
+    <a href="#costumbres">Tradiciones</a>
+    <a href="#turismo">Turismo</a>
+    <a href="#ubicacion">Ubicación</a>
+  </nav>
+</header>
+
+<main>
+  <section id="inicio" class="pantalla portada">
+    <div class="portada-texto">
+      <p>Conoce la cultura, las tradiciones, la gastronomía y los lugares de nuestro municipio.</p>
+      <a class="boton" href="#explorar">Explorar</a>
+    </div>
+    <div class="accesos" id="explorar">
+      <a href="#costumbres"><span>✿</span> Cultura</a>
+      <a href="#artesanias"><span>▦</span> Artesanías</a>
+      <a href="#costumbres"><span>✣</span> Tradiciones</a>
+      <a href="#gastronomia"><span>◉</span> Gastronomía</a>
+      <a href="#turismo"><span>⌖</span> Turismo</a>
+    </div>
+  </section>
+
+  <section id="gastronomia" class="pantalla">
+    <h1>Gastronomía</h1>
+    <p class="intro">VILLA360 te muestra algunos platillos de la gastronomía de su municipio.</p>
+    <div class="tarjetas cuatro">
+      <article class="tarjeta"><img src="imagenes/image16.jpeg" alt="Platillos de la gastronomía"><h2>Platillos</h2><p>Conoce algunos platillos tradicionales de Villa de Allende.</p><a href="#recetas" class="boton">Ver más</a></article>
+      <article class="tarjeta"><img src="imagenes/image17.jpeg" alt="Bebidas tradicionales"><h2>Bebidas</h2><p>Descubre bebidas que forman parte de la gastronomía local.</p><a href="#bebidas" class="boton">Ver más</a></article>
+      <article class="tarjeta"><img src="imagenes/image18.jpeg" alt="Pan tradicional"><h2>Postres</h2><p>Conoce sabores y preparaciones de la región.</p><a href="#recetas" class="boton">Ver más</a></article> 
+    </div>  
+  </section>
+
+  <section id="recetas" class="pantalla">
+    <h1>Recetas</h1>
+    <p class="intro">VILLA360 te muestra algunas recetas de la gastronomía de su municipio.</p>
+    <div class="tarjetas cuatro">
+      <article class="tarjeta"><img src="imagenes/image16.jpeg" alt="Platillo tradicional"><h2>Platillo tradicional</h2><p>Receta de la cocina local.</p><a href="#receta-detalle" class="boton">Ver receta</a></article>
+      <article class="tarjeta"><img src="imagenes/image17.jpeg" alt="Preparación regional"><h2>Bebidas regionales</h2><p>Conoce más sobre su preparación.</p><a href="#receta-detalle" class="boton">Ver receta</a></article>
+      <article class="tarjeta"><img src="imagenes/image18.jpeg" alt="Postre"><h2>Postres</h2><p>Sabores de la comunidad.</p><a href="#receta-detalle" class="boton">Ver receta</a></article>
+    </div>
+  </section>
+
+  <section id="bebidas" class="pantalla">
+    <h1>Bebidas</h1>
+    <p class="intro">Bebidas tradicionales del municipio.</p>
+    <div class="tarjetas tres">
+      <article class="tarjeta"><img src="imagenes/image24.jpeg" alt="Bebidas"><h2>Pulque</h2><p>El "Pulque" forma parte de las bebidas tipicas de Villa de Allende por su labor de hacer con maguey .</p></article>
+      <article class="tarjeta"><img src="imagenes/image25.jpeg" alt="Gastronomía"><h2>Cende</h2><p>El cende forma parte de Villa de Allende en las bebidas tipicas del municio por su sabor a fermento de maiz.</p></article>
+    </div>
+  </section>
+
+  <section id="costumbres" class="pantalla">
+    <h1>Tradiciones y costumbres</h1>
+    <div class="bloque">
+      <img src="imagenes/image20.jpeg" alt="costumbres">
+      <div><h2>Nuestras tradiciones y costumbres</h2><p>Conoce las tradiciones y costumbres que forman parte de la identidad de Villa de Allende.</p><div class="acciones"><a class="boton" href="#fiestas">Fiestas</a><a class="boton claro" href="#vestimenta">Vida cotidiana</a><a class="boton claro" href="#artesanias">Artesanias</a></div></div>
+    </div>
+    <div class="tarjetas tres">
+      <article class="tarjeta"><img src="imagenes/image27.jpg" alt="Costumbres"><h2>Costumbres</h2><a class="boton" href="#vestimenta">Ver más</a></article>
+      <article class="tarjeta"><img src="imagenes/image26.jpeg" alt="Tradiciones"><h2>Tradiciones</h2><a class="boton" href="#fiestas">Ver más</a></article>
+      <article class="tarjeta"><img src="imagenes/image38.jpeg" alt="Artesanías"><h2>Fiestas</h2><a class="boton" href="#fiestas">Ver más</a></article>
+    </div>
+  </section>
+
+  <section id="vestimenta" class="pantalla">
+    <h1>Vestimenta</h1>
+    <div class="bloque"><img src="imagenes/image28.jpeg" alt="Vestimenta"><div><p>En San Jose Villa de Allende existen varios tipos ropa pero las mas representativas son las mazahuas.</p><a href="#vestimenta" class="boton">Regresar</a></div></div>
+  </section>
+
+  <section id="fiestas" class="pantalla">
+    <h1>Fiestas</h1>
+    <div class="tarjetas tres">
+      <article class="tarjeta"><img src="imagenes/image29.jpg" alt="Fiestas tradicionales"><h2>San Ildefonso</h2><p>La fiesta de San Ildefonso es una de las mas representativas y grandes de Villa de Allende ya que cuenta con una muy amplia variedad de tradicones y de costumbres como lo es la fiesta patronal ya que tambien atrae a muchos turistas.</p></article>
+      <article class="tarjeta"><img src="imagenes/image30.jpeg" alt="Costumbres"><h2>San Jeronimo</h2><p>La fiesta de San Jeronimo es la segunda mas grande en el municipio y es tambien una de las mas importantes en el por sus tradiciones y bailables.</p></article>
+      <article class="tarjeta"><img src="imagenes/image31.jpg" alt="Rituales"><h2>San Pablo</h2><p>La fiesta de San Pablo es la tercera mas grande de Villa de Allende y cuenta con una de las culturas mas bellas del municipio.</p></article>
+    </div>
+  </section>
+
+  <section id="artesanias" class="pantalla">
+    <h1>Artesanías</h1>
+    <div class="bloque"><img src="imagenes/image32.jpeg" alt="Artesanías"><div><h2>Artesanías de Villa de Allende</h2><p>Conoce las expresiones artesanales y el trabajo de las personas de las comunidades.</p><a class="boton" href="#inicio">Volver al inicio</a></div></div>
+  </section>
+
+  <section id="turismo" class="pantalla">
+    <h1>Lugares turísticos</h1>
+    <p class="intro">Conoce algunos de los lugares de interés del municipio.</p>
+    <div class="tarjetas cuatro">
+      <article class="tarjeta"><img src="imagenes/image33.jpg" alt="Chalmita"><h2>Chalmita</h2><a href="#ubicacion" class="boton">Explorar</a></article>
+      <article class="tarjeta"><img src="imagenes/image34.jpg" alt="San Ildefonso"><h2>Mirador Las Aguilas</h2><a href="#ubicacion" class="boton">Explorar</a></article>
+      <article class="tarjeta"><img src="imagenes/image35.jpg" alt="Vista del municipio"><h2>Valle Escondido</h2><a href="#ubicacion" class="boton">Explorar</a></article>
+      <article class="tarjeta"><img src="imagenes/image36.jpg" alt="Paisaje"><h2>Hotel Sublime</h2><a href="#ubicacion" class="boton">Explorar</a></article>
+    </div>
+  </section>
+
+  <section id="turismo" class="pantalla">
+    <h1>Principales sitios de Villa de Allende</h1>
+    <p class="intro">Conoce algunos sitios de interés del municipio y descubre lo que puedes visitar.</p>
+    <div class="bloque"><img src="imagenes/image37.jpeg" alt="Sitio de Villa de Allende"><div><h2>Lugares para conocer</h2><p>Explora los espacios y paisajes que forman parte de Villa de Allende.</p><a class="boton" href="#ubicacion">Ver ubicación</a></div></div>
+  </section>
+
+  <section id="ubicacion" class="pantalla">
+    <h1>Detalle</h1>
+    <div class="ubicacion">
+      <div class="pin">📍</div><div><h2>Ubicación</h2><label for="lugar">Selecciona un lugar</label><select id="lugar"><option>Villa de Allende</option><option>Chalmita</option><option>Mirador Las Aguilas</option><option>Valle Escondido</option><option>Hotel Sublime</option></select><button class="boton" onclick="document.getElementById('resultado').textContent='Lugar seleccionado: '+document.getElementById('lugar').value">Cómo llegar</button><p id="resultado" aria-live="polite"></p><a href="#turismo">Regresar</a></div><img src="imagenes/image39.jpeg" alt="Mapa de ubicación"></div>
+    <div class="acciones"><a class="boton claro" href="#inicio">Inicio</a><a class="boton claro" href="#turismo">Lugares turísticos</a></div>
+  </section>
+</main>
+<footer><span>VILLA360</span> · Villa de Allende</footer>
+</body>
+</html>
